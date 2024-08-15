@@ -1,0 +1,14 @@
+@mixin characteristic($height, $weight, $color) {
+  height: $height;
+  weight: $weight;
+  color: $color;
+}
+
+// How it can be used
+//@import './mixins.scss';
+
+/* 
+div {
+  @include characteristic(200px, 150px, green);
+}
+*/

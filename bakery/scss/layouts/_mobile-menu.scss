@@ -1,0 +1,39 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 24px;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform  0.3s;
+  z-index: 5;
+  overflow: hidden;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__img {
+    position: absolute;
+    transform: rotate(5deg);
+    bottom: 0;
+    right: 0;
+  }
+}

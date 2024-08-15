@@ -1,0 +1,84 @@
+.input {
+  position: relative; 
+
+  &__label {
+    /* position: absolute; */
+    display: block;
+    /* font-size: 16px;
+    line-height: 1.17; */
+    /* top: 16px;
+    left: 42px; */
+    /* color: var(--color-secondary-dark); */
+    /* transition: transform 0.3s; */
+  }
+
+  &__control {
+    width: 100%;
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 1.17;
+    border: 1px solid var(--color-secondary-dark);
+    background-color: transparent;
+    border-radius: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+      font-size: 16px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-brand-normal);
+    }
+
+    &::placeholder {
+      color: var(--color-secondary-dark);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}
+
+/* .form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+} */
+
+/* .form-input:disabled {
+  border-color: lightgrey;
+}
+
+.form-input:disabled::placeholder {
+  color: lightcyan;
+} */
+
+/* .checkbox-field {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: greenyellow;
+}
+
+.checkbox-label::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 0;
+  left: 0;
+  margin-top: 4px;
+  border: 1px solid var(--color-primary-dark); 
+  border-radius: 2px;
+} */

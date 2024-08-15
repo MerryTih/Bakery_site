@@ -1,0 +1,24 @@
+.courusel-button {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
+  
+  &.next {
+    transform: rotate(180deg);
+  }
+}
+
